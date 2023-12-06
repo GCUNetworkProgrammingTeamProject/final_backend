@@ -1,0 +1,52 @@
+#\uD3EC\uD2B8 \uC124\uC815
+Server:
+    port: 6009
+    servlet:
+        encoding:
+            charset: UTF-8
+            enabled: true
+            force: true
+jwt:
+    secret: cejkasdjhfShaDFonacgojgogFNkrgngErsdfctAnDeojgachFJradPythiIKDSgprSooasdfNKL
+#저장 경로
+file:
+    dir:
+        analysisVideo : /home/t23209/educrat/public/assets/analysisVideo/
+        img : /home/t23209/educrat/public/assets/img/courses/
+        video : /home/t23209/educrat/public/assets/video/
+        lectureData : /home/t23209/educrat/public/assets/lectureData/
+external:
+    api:
+        url: http://localhost:7000
+openai:
+    api-key: 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
+
+
+spring:
+    servlet:
+        multipart:
+            max-file-size: 1GB
+            max-request-size: 1GB
+    datasource:
+        driver-class-name: org.mariadb.jdbc.Driver
+        url: jdbc:mariadb://localhost:3306/db23209
+        username: dbid232
+        password: dbpass232
+    jpa:
+        properties:
+            hibernate:
+                format_sql: true
+                show-sql : true
+        hibernate:
+            ddl-auto: update
+        database-platform: org.hibernate.dialect.MariaDBDialect
+    devtools:
+        livereload:
+            enabled: true
+    thymeleaf:
+        cache: false
+
+
+
+
+
